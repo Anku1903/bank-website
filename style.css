@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    background: #131313;
+    padding: 1rem 8rem;
+    z-index: 1000 !important;
+   
+   
+}
+.navbar .navbar-brand{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white !important;
+}
+.navbar .nav-item{
+    margin-left: 23px;
+}
+.navbar .nav-link{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: white !important;
+    text-transform: capitalize;
+}
+.navbar .nav-link:hover{
+    color: #00BF85 !important;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a.active{
+    
+    color: #00BF85 !important;
+}
+.navbar .btn{
+background: #00BF85 !important;
+padding: 0.4rem 1.4rem;
+font-weight: 600;
+border-radius: 1.3rem;
+
+}
+
+.mid{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.mid video{
+    pointer-events: none;
+    position: absolute;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+}
+.mid .hero{
+    z-index: 500;
+    position: relative;
+    padding-bottom: 1.2rem;
+
+}
+.mid p{
+    width: 55%;
+    letter-spacing: .2px;
+    font-size: 1.1rem;
+}
+.mid a{
+    text-decoration: none;
+    display: inline-block;
+    padding: .5rem 1.6rem;
+    background: #00BF85;
+    color: black;
+    font-weight: 600;
+    border-radius: 30px;
+    margin-top: 1.2rem;
+
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    background: #008F85;
+}
+
+.about{
+background: #000;
+}
+.about .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+}
+.about .text h6{
+    font-weight: 800;
+color: #00BF85;
+font-size: 1rem;
+}
+
+.about .text h2{
+    font-weight: 700;
+color: #fff;
+font-size: 2.7rem;
+}
+
+.about .text p{
+    font-weight: 500;
+color: #fff;
+font-size: 1rem;
+letter-spacing: .5px;
+}
+.about .text a{
+    
+    text-decoration: none;
+    display: inline-block;
+    padding: .5rem 1.6rem;
+    background: #00BF85;
+    color: black;
+    font-weight: 600;
+    border-radius: 30px;
+    margin-top: 1.2rem;
+}
+
+
+.discover{
+    background: #fff;
+    }
+    .discover .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: auto;
+    }
+    .discover .text h6{
+        font-weight: 800;
+    color: #00BF85;
+    font-size: 1rem;
+    }
+    
+    .discover .text h2{
+        font-weight: 700;
+    color: #000;
+    font-size: 2.7rem;
+    }
+    
+    .discover .text p{
+        font-weight: 500;
+    color: #000;
+    font-size: 1rem;
+    letter-spacing: .5px;
+    }
+    .discover .text a{
+        
+        text-decoration: none;
+        display: inline-block;
+        padding: .5rem 1.6rem;
+        background: #000;
+        color: white;
+        font-weight:500;
+        border-radius: 30px;
+        margin-top: 1.2rem;
+    }
+
+    .services{
+        background-color: #000;
+    }
+    .services .one{
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem 1.5rem;
+        border-radius: 10px;
+    }
+
+    .signup{
+        background: #fff;
+        }
+        .signup .text{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin: auto;
+        }
+        .signup .text h6{
+            font-weight: 800;
+        color: #00BF85;
+        font-size: 1rem;
+        }
+        
+        .signup .text h2{
+            font-weight: 700;
+        color: #000;
+        font-size: 2.7rem;
+        }
+        
+        .signup .text p{
+            font-weight: 500;
+        color: #000;
+        font-size: 1rem;
+        letter-spacing: .5px;
+        }
+        .signup .text a{
+            
+            text-decoration: none;
+            display: inline-block;
+            padding: .5rem 1.6rem;
+            background: #000;
+            color: #fff;
+            font-weight: 500;
+            border-radius: 30px;
+            margin-top: 1.2rem;
+        }
+
+
+        @media screen and (max-width:500px) {
+            .mid .hero h2{
+                font-size: 2rem;
+                margin: 10px;
+            }
+            
+        .mid p{
+            width: 91%;
+            letter-spacing: .2px;
+            font-size: 1rem;
+            text-justify: auto;
+        }
+        .about .text a{
+            padding: .4rem 1.5rem;
+        }
+        .discover .text a{
+            padding: .4rem 1.5rem;
+        }
+        .signup .text a{
+            padding: .4rem 1.5rem;
+        }
+        .mid a{
+            padding: .4rem 1.5rem;
+        }
+        .about .text h2{
+            font-weight: 700;
+        color: #fff;
+        font-size: 2rem;
+        }
+        .about .text p{
+            font-weight: 500;
+        color: #fff;
+        font-size: .8rem;
+        letter-spacing: .5px;
+        }
+        .discover .text h2{
+            font-weight: 700;
+       
+        font-size: 2rem;
+        }
+        .discover .text p{
+            font-weight: 500;
+    
+        font-size: .8rem;
+        letter-spacing: .5px;
+        }
+        .signup .text h2{
+            font-weight: 700;
+       
+        font-size: 2rem;
+        }
+        .signup .text p{
+            font-weight: 500;
+      
+        font-size: .8rem;
+        letter-spacing: .5px;
+        }
+        }
+        .navbar-toggler{
+        border: none !important;
+        color: white !important;
+        }
+        .navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+}
+.navbar .navbar-toggler-icon {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+.list-unstyled a{
+    color: #fff !important;
+    font-weight: 300;
+}
+        footer{
+            background-color: #111 !important;
+        }
+        footer > ul.list-unstyled.list-inline.text-center.py-2 > li:nth-child(2) > a{
+color: #111;
+border-radius: 1.3rem;
+padding: .5rem 1.5rem;
+cursor: pointer;
+font-weight: 700;
+text-decoration: none;
+border: none;
+        }
+
+
+        @media screen and (max-width: 988px) {
+            
+.navbar{
+    background: #131313;
+    padding: 1.1rem;
+    z-index: 1000 !important;
+   
+   
+}
+#navbarSupportedContent ul{
+    padding-left: .8rem;
+}
+#navbarSupportedContent ul > li:nth-child(n) a{
+    padding: .9rem 0;
+}
+            
+        }
