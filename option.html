@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>country</h3> <br>
+    <select name="country" id="country" onchange="myfun()">
+<option value="india">india</option>
+<option value="usa">usa</option>
+<option value="uk">uk</option>
+<option value="japan">japan</option>
+<option value="france">france</option>
+
+    </select>
+    <h3>city</h3> <br>
+    
+  
+</body>
+<script>
+    const india = ["mumbai","chennai","surat"];
+    
+    const usa = ["NYC","chennai","surat"];
+    
+    const uk = ["London","chennai","surat"];
+    
+    const france = ["peris","chennai","surat"];
+    
+    const japan = ["tokyo","chennai","surat"];
+    function myfun() {
+        const country = document.getElementById('country').value;
+        
+       const data = "<select name='city'>";
+            if(country==="india"){
+                india.forEach((element) => {
+                    data+="<option>"+element+"</option>";
+                })
+            }
+            else if(country==="usa"){
+                usa.forEach((element) => {
+                    data+="<option>"+element+"</option>";
+                })
+            }
+            else if(country==="uk"){
+                uk.forEach((element) => {
+                    data+="<option>"+element+"</option>";
+                })
+            }
+            else if(country==="france"){
+                france.forEach((element) => {
+                    data+="<option>"+element+"</option>";
+                })
+            }
+            else if(country==="japan"){
+                japan.forEach((element) => {
+                    data+="<option>"+element+"</option>";
+                })
+            }
+            data+="</select>";
+            document.write(data);   
+        
+        
+
+    }
+</script>
+</html>
